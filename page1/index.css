@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(66, 63, 60);
+    color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    grid-area: g_area_header;
+    background-color: purple;
+}
+
+main {
+    grid-area: g_area_main;
+    background-color: red;
+}
+
+aside {
+    grid-area: g_area_sidebar;
+    background-color: blueviolet;
+}
+
+.grid-container {
+    background-color: gainsboro;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 1000px;
+    grid-template-rows: 100px auto;
+    grid-template-areas:
+    /* 6 kolumner => g_area_header 6 ggr  */
+    /* 1 raden */
+    "g_area_header g_area_header g_area_header g_area_header g_area_header g_area_header"
+    /* 6 kolumner => g_area_main 4 ggr | g_area_sidebar 2ggr */
+    /* 2 raden */
+    "g_area_main g_area_main g_area_main g_area_main g_area_sidebar g_area_sidebar"
+    ;
+    
+}
+
+.content-actual {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content:space-around;
+
+}

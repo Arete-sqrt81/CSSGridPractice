@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(98, 98, 98);
+    color:black ;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    grid-area: top;
+    background-color: rgb(206, 37, 37);
+}
+
+.top_bar {
+    /* height: 120px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-grow: 1; */
+    height: 60px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    
+    grid-area: main;
+    background-color: red;
+}
+
+.main_article {
+    /* height: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.boxes {
+    display: flex;
+    
+    
+
+
+    
+}
+
+.box {
+    
+    height: 180px;
+    
+    flex-grow: 1;
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+aside {
+    grid-area: sidebar;
+    background-color: rgb(144, 13, 13);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar_article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.grid-container {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    grid-template-rows: 180px 480px;
+    grid-template-areas: "top top top" "main main sidebar";
+    
+}
